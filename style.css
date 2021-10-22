@@ -1,0 +1,133 @@
+/*
+CSS - Cascating StyleSheet
+
+Cascating - Cascata
+O que está abaixo tem maior força
+
+StyleSheet - Folha de estilo
+Beleza, aparência da página
+*/
+
+/*=== RESET ==============*/
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=== VARIABLES ==============*/
+
+:root {
+  /* colors */
+  --hue: 240;
+
+  /* HSL color mode */
+  --text-color: hsl(var(--hue) 9% 89%);
+  --text-color-light: hsl(var(--hue) 8% 78%);
+  --body-color: hsl(var(--hue) 6% 13%);
+  --icon-footer: hsl(0 0% 100%);
+
+  /* fonts */
+
+  --title-font-size: 1.5rem;
+  --body-font-size: 0.875rem;
+
+  --font-text: 'Roboto', sans-serif;
+}
+
+/*=== MAIN ==============*/
+
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+}
+
+main {
+  background: url(./assets/images/backgound.png);
+  max-width: 375px;
+  max-height: 812px;
+}
+
+.container {
+  max-width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.avatar {
+  margin: 11.5rem auto 0;
+  position: relative;
+}
+
+.avatar span {
+  top: -15px;
+  position: absolute;
+  z-index: 1;
+}
+
+.avatar > img {
+  height: 11.5rem;
+  width: 10rem;
+  object-fit: cover;
+
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+}
+
+h1 {
+  font: 700 var(--title-font-size) var(--font-text);
+  margin-top: 1.5rem;
+}
+
+a {
+  color: var(--text-color-light);
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
+
+.portifolio {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+h2 {
+  font-size: 0.875rem;
+  margin-top: 2rem;
+}
+
+h1,
+h2 {
+  color: var(--text-color);
+}
+
+h2,
+a {
+  font: 400 var(--body-font-size) var(--font-text);
+}
+
+ul {
+  margin-top: 4rem;
+  display: flex;
+  padding: 0px;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.linkedin {
+  max-width: 28px;
+  margin: 11px;
+  position: absolute;
+}

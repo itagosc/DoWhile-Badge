@@ -32,6 +32,7 @@
   <body>
     <main>
       <div class="container">
+        <!-- Perfil -->
         <div class="avatar">
           <span>
             <img src="./assets/images/selo.svg" alt="Selo Rocketseat" />
@@ -39,29 +40,31 @@
           <img src="./assets/images/me.jpg" alt="Foto de perfil" />
         </div>
 
-        <h1 class="title">Tiago Silva</h1>
+        <!-- Introducion -->
+        <h1 id="userName" class="title">Tiago Silva</h1>
 
-        <a class="portifolio" href="https://github.com/itagosc"
+        <a id="github" href="https://github.com/itagosc" target="_blank"
           ><img
             src="./assets/images/github.svg"
             alt="Icon para redirecionamento github"
-          />@itagosc</a
+          />itagosc</a
         >
 
         <h2>A young man starting to learn web programming</h2>
 
-        <ul>
-          <li>
-            <a href="http://instagram.com/itagosc" target="_blank"
+        <!-- Icons Social Grid -->
+        <ul id="socialLinks">
+          <li class="instagram">
+            <a href="https://instagram.com/maikbrito" target="_blank"
               ><img
                 src="./assets/images/instagram.svg"
                 alt="Icon para redirecionamento instagram"
             /></a>
           </li>
-          <li>
-            <a href="https://www.linkedin.com/in/itagosc/" target="_blank"
+          <li class="linkedin">
+            <a href="https://www.linkedin.com/in/maikbrito/" target="_blank"
               ><img
-                class="linkedin"
+                id="linkedin"
                 src="./assets/images/linkedin.svg"
                 alt="Icon para redirecionamento linkedin"
               /><svg width="48" height="48">
@@ -69,8 +72,8 @@
               </svg>
             </a>
           </li>
-          <li>
-            <a href="https://twitter.com/ItagoSC" target="_blank"
+          <li class="twitter">
+            <a href="https://twitter.com/maikbrito" target="_blank"
               ><img
                 src="./assets/images/twitter.svg"
                 alt="Icon para redirecionamento twitter"
@@ -79,5 +82,7 @@
         </ul>
       </div>
     </main>
+    <!-- Script -->
+    <script src="script.js"></script>
   </body>
 </html>

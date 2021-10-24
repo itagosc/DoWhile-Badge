@@ -31,7 +31,6 @@ a {
   --text-color: hsl(var(--hue) 9% 89%);
   --text-color-light: hsl(var(--hue) 8% 78%);
   --body-color: hsl(var(--hue) 6% 13%);
-  --icon-footer: hsl(0 0% 100%);
 
   /* fonts */
 
@@ -55,7 +54,7 @@ body {
 }
 
 main {
-  background: url(./assets/images/backgound.png);
+  background: url(./assets/images/background.svg);
   max-width: 375px;
   max-height: 812px;
 }
@@ -97,23 +96,23 @@ a {
   margin-top: 0.25rem;
 }
 
-#github {
+#profileLink {
   display: flex;
   gap: 0.75rem;
   justify-content: center;
 }
 
-h2 {
+p {
   font-size: 0.875rem;
   margin-top: 2rem;
 }
 
 h1,
-h2 {
+p {
   color: var(--text-color);
 }
 
-h2,
+p,
 a {
   font: 400 var(--body-font-size) var(--font-text);
 }
